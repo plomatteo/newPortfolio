@@ -36,7 +36,7 @@
             <div id="Home"></div>
         </div>
         <nav id="navbar-mp" class="navbar navbar-dark fixed-top navbar-expand-lg shadow-5-strong">
-            <div class="container align-items-center py-3 px-3">
+            <div class="container align-items-center px-3">
                 <a class="navbar-brand" href="#"><img src="./assets/img/1.svg" alt="logo mp" id="logomp"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse"
                     aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
@@ -64,7 +64,7 @@
                     </ul>
                 </div>
                 <div class="collapse navbar-collapse multi-collapse justify-content-end" id="container-call">
-                    <button type="button" class="btn btn-outline-success align-center" id="call-to-action">Hire
+                    <button type="button" class="btn btn-outline-success align-center togglemodal" id="call-to-action">Hire
                         me</button>
                 </div>
             </div>
@@ -234,15 +234,15 @@
 
     </div>
     <!-- START CHI SONO SECTION-->
-    <div id="MyWorks" class="container px-0 text-center container-padding">
+    <div id="MyWorks" class="container text-center container-padding">
         <h4 class="scrollspyHeading">My Works</h4>
-        <div class="row-cols-1 row-cols-md-2 g-4 px-4 py-5">
+        <div class="row row-cols-1 row-cols-md-2 g-4 px-4 py-4">
             <div class="col">
                 <div class="card">
                     <img src="./assets/img/mood_web_site.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Mood website</h5>
-                        <p class="card-text mainText">Un sito realizzato per un videomaker locale, scrivendo in Javascript il funzionamento dei player video</p>
+                        <p class="card-text mainText">Un sito realizzato per un videomaker locale, con player video custom scritto in JS</p>
                     </div>
                 </div>
             </div>
@@ -260,7 +260,7 @@
                     <img src="./assets/img/sneakers.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Pagina E-commerce</h5>
-                        <p class="card-text mainText">Riproduzione di una pagina E-commerce con script Javascript che aggiunge uno o più elementi al carrello</p>
+                        <p class="card-text mainText">Riproduzione di una pagina E-commerce con script che aggiunge uno o più elementi al carrello</p>
                     </div>
                 </div>
             </div>
@@ -371,6 +371,94 @@
         </div>
     </div>
 
+
+  <!------------------------------------------ Modal ------------------------------------------->
+  <div class="modal fade" tabindex="-1" role="dialog" id="myModal">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">dialog header</h5>
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <svg class="icon">
+                <use xlink:href="/bootstrap-italia/dist/svg/sprite.svg#it-close"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="modal-body">
+                    <!--Grid column-->
+                    <div class="col-md-9 mb-md-0 mb-5">
+                        <form id="contact-form" name="contact-form" action="https://formspree.io/f/mrgjegdj" method="POST">
+
+                            <!--Grid row-->
+                            <div class="row">
+
+                                <!--Grid column-->
+                                <div class="col-md-6">
+                                    <div class="md-form mb-0">
+                                        <input type="text" id="name" name="name" class="form-control">
+                                        <label for="name" class="">Your name</label>
+                                    </div>
+                                </div>
+                                <!--Grid column-->
+
+                                <!--Grid column-->
+                                <div class="col-md-6">
+                                    <div class="md-form mb-0">
+                                        <input type="text" id="email" name="email" class="form-control">
+                                        <label for="email" class="">Your email</label>
+                                    </div>
+                                </div>
+                                <!--Grid column-->
+
+                            </div>
+                            <!--Grid row-->
+
+                            <!--Grid row-->
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="md-form mb-0">
+                                        <input type="text" id="subject" name="subject" class="form-control">
+                                        <label for="subject" class="">Subject</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Grid row-->
+
+                            <!--Grid row-->
+                            <div class="row">
+
+                                <!--Grid column-->
+                                <div class="col-md-12">
+
+                                    <div class="md-form">
+                                        <textarea type="text" id="message" name="message" rows="2"
+                                            class="form-control md-textarea"></textarea>
+                                        <label for="message">Your message</label>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!--Grid row-->
+
+                        </form>
+
+                        <div class="text-center text-md-left">
+                            <a class="btn btn-primary"
+                                onclick="document.getElementById('contact-form').submit();">Send</a>
+                        </div>
+                        <div class="status"></div>
+                    </div>
+                    <!--Grid column-->
+
+        </div>
+        <div class="modal-footer">
+          <button id="cancelbutton"class="btn btn-outline-primary btn-sm togglemodal" type="button" data-dismiss="modal">Cancel</button>
+          <button class="btn btn-primary btn-sm" type="button">Action 1</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
     <!-- START FOOTER SECTION-->
     <footer class="container-fluid bg-footer d-flex flex-column justify-content-end text-white">
 
@@ -409,6 +497,12 @@
 
     <script>
         jQuery(document).ready(function () {
+
+            $(function () {
+                $('.togglemodal').on("click", function () {
+                    $('#myModal').modal('toggle');
+                });
+            });
 
             //Collapse mobile navbar
             $(function () {
