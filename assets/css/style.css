@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-family: questrial;
+    font-size: 1rem;
+    position: relative;
+}
+
+h4{
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+
+p {
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+i {
+    font-size: 2.5em;
+}
+
+.scrollspyHeading{
+    margin-top: 25px;
+}
+
+.container-padding{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#icon {
+    font-size: 1.4em;
+    margin: 0px 20px;
+    text-align: center;
+}
+#profileImg{
+    width: 100%;
+}
+
+.mainText {
+    font-size: 1.3rem;
+}
+.bg-gray {
+    background-color: #dee8ef;
+}
+.iconecontainer {
+    min-width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding-top: 6%;
+    padding-bottom: 6%;
+}
+
+
+/*-------------------------START HEADER SECTION---------------------*/
+/*Header*/
+
+header {
+    position: relative;
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    min-height: 40rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+header video {
+    position: absolute;
+    opacity: 1;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: 190vh;
+    z-index: -1;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+    position: relative;
+    z-index: 2;
+}
+
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 1;
+    z-index: 100;
+}
+
+#title-overlay-home {
+    text-shadow: 2px 1px 10px rgba(0, 0, 0, 1);
+    font-size: 2em;
+    width: 50%;
+    line-height: 1.4;
+    letter-spacing: 0.1rem;
+}
+
+.colContainer {
+    padding: 16px;
+}
+
+.iconalinkedin, .iconagit {
+    color: white;
+}
+
+.iconagit:hover {
+    color: black;
+}
+
+.iconalinkedin:hover {
+    color: #2196F3;
+}
+
+#space-between-socialicon {
+    height: 2rem;
+}
+
+/*Navbar*/
+.togglericonca {
+    color: #2196F3;
+    font-size: 28px;
+    text-shadow: none;
+}
+
+.nav-link{
+    text-shadow: 1px 1px 10px black;
+}
+
+.nav-pills .nav-link.active{
+    background-color: #2196F3;
+    text-shadow: none;
+}
+
+.backgroundColorNav {
+    background-image: url('/assets/img/sfondonavbar.gif');
+    background-size:cover;
+    z-index:10;
+    box-shadow: white 2px 2px;
+}
+
+#logomp {
+    width: 130px;
+    padding: 10px;
+}
+
+#call-to-action {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#call-to-action:hover {
+    background-color: #8BC34A;
+}
+
+/*-------------------------START MY WORKS SECTION---------------------*/
+/*Background video*/
+
+.bg-white {
+    background-color: white;
+    color: black;
+}
+
+
+.bg-video {
+    background-color: black;
+}
+
+/*Margin-top & padding hero section overlay*/
+.rowOverlay {
+    margin-top: 300px;
+    padding: 16px;
+}
+
+/*-------------------------START FOOTER SECTION---------------------*/
+.btn-primary{
+    background: #2196F3;
+}
+.bg-footer {
+    height: 300px;
+    background-image: linear-gradient(to bottom, #dfe3e4, #e7eaeb, #f0f1f2, #f8f8f8, #ffffff);
+}
+    /********** Medium devices only **********/
+@media (min-width: 1500px) {
+    header {
+        position: relative;
+        background-color: black;
+        height: 100vh;
+        min-height: 40rem;
+        width: 100vw;
+        overflow: hidden;
+    }
+
+    header video {
+        position: absolute;
+        opacity: 1;
+        top: 50%;
+        left: 50%;
+        width: auto;
+        height: 230vh;
+        z-index: -1;
+        -ms-transform: translateX(-50%) translateY(-50%);
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+    }
+}
+
+@media (min-width: 767px) and (max-width: 991px) {
+    #container-call {
+        text-align: center;
+    }
+
+    body {
+        font-size: 16.5px;
+    }
+
+    header {
+        position: relative;
+        background-color: black;
+        height: 100vh;
+        max-height: 900px;
+        min-height: 40rem;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    header video {
+        position: absolute;
+        opacity: 1;
+        top: 50%;
+        left: 50%;
+        width: auto;
+        height: 170vh;
+        z-index: -1;
+        -ms-transform: translateX(-50%) translateY(-50%);
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+    }
+
+    .fa-volume-up, .fa-volume-mute {
+        font-size: 1.6em;
+    }
+
+    .fa-play, .fa-pause {
+        font-size: 1.3em;
+    }
+}
+
+/********** Mobile only **********/
+@media (max-width: 767px) {
+    header video {
+        min-width: 350%;
+    }
+
+    #container-call {
+        text-align: center;
+    }
+
+    header {
+        position: relative;
+        background-color: black;
+        height: 100vh;
+        max-height: 900px;
+        min-height: 40rem;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    header video {
+        position: absolute;
+        opacity: 1;
+        top: 38%;
+        left: 50%;
+        width: auto;
+        height: 150vh;
+        z-index: -1;
+        -ms-transform: translateX(-50%) translateY(-50%);
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+    }
+
+    .fa-volume-up, .fa-volume-mute {
+        font-size: 1.5em;
+    }
+
+    .fa-play, .fa-pause {
+        font-size: 1.2em;
+    }
+}
