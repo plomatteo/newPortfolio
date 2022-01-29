@@ -64,7 +64,8 @@
                     </ul>
                 </div>
                 <div class="collapse navbar-collapse multi-collapse justify-content-end" id="container-call">
-                    <button type="button" class="btn btn-outline-success align-center togglemodal" id="call-to-action">Hire
+                    <button type="button" class="btn btn-outline-success align-center togglemodal"
+                        id="call-to-action">Hire
                         me</button>
                 </div>
             </div>
@@ -121,7 +122,8 @@
                 <div>
                     <h4>Matteo Polo</h4>
                     <p class="mainText">Sono una persona energica e pacata che raggiunge gli obiettivi facendo squadra.
-                        Mi sono diplomato in informatica. Da 6 mesi ho intrapreso un cambiamento scegliendo di aggiornare le mie competenze da
+                        Mi sono diplomato in informatica. Da 6 mesi ho intrapreso un cambiamento scegliendo di
+                        aggiornare le mie competenze da
                         Sviluppatore Frontend.
                     </p>
                 </div>
@@ -242,7 +244,8 @@
                     <img src="./assets/img/mood_web_site.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Mood website</h5>
-                        <p class="card-text mainText">Un sito realizzato per un videomaker locale, con player video custom scritto in JS</p>
+                        <p class="card-text mainText">Un sito realizzato per un videomaker locale, con player video
+                            custom scritto in JS</p>
                     </div>
                 </div>
             </div>
@@ -251,16 +254,18 @@
                     <img src="./assets/img/acchiappailpapero.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Giochi arcade</h5>
-                        <p class="card-text mainText">Due giochi arcade realizzati in Javascript: Tris e Acchiappa il papero.</p>
+                        <p class="card-text mainText">Due giochi arcade realizzati in Javascript: Tris e Acchiappa il
+                            papero.</p>
                     </div>
                 </div>
             </div>
-           <div class="col">
+            <div class="col">
                 <div class="card">
                     <img src="./assets/img/sneakers.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Pagina E-commerce</h5>
-                        <p class="card-text mainText">Riproduzione di una pagina E-commerce con script che aggiunge uno o più elementi al carrello</p>
+                        <p class="card-text mainText">Riproduzione di una pagina E-commerce con script che aggiunge uno
+                            o più elementi al carrello</p>
                     </div>
                 </div>
             </div>
@@ -269,7 +274,8 @@
                     <img src="./assets/img/film-database.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Catalogo dei film</h5>
-                        <p class="card-text mainText">Catalogo dei film realizzato utilizzando chiamate AJAX sia GET che POST a "The Movie Database" </p>
+                        <p class="card-text mainText">Catalogo dei film realizzato utilizzando chiamate AJAX sia GET che
+                            POST a "The Movie Database" </p>
                     </div>
                 </div>
             </div>
@@ -286,7 +292,8 @@
 
                     <!--Grid column-->
                     <div class="col-md-9 mb-md-0 mb-5">
-                        <form id="contact-form" name="contact-form" action="https://formspree.io/f/mrgjegdj" method="POST">
+                        <form id="contact-form" name="contact-form" action="https://formspree.io/f/mrgjegdj"
+                            method="POST">
 
                             <!--Grid row-->
                             <div class="row">
@@ -372,20 +379,20 @@
     </div>
 
 
-  <!------------------------------------------ Modal ------------------------------------------->
-  <div class="modal fade" tabindex="-1" role="dialog" id="myModal">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">Fissiamo un colloquio?</h5>
-          <div>
-                <img id="logomp" src="./assets/img/logoMP.png" alt="">
-        </div>
-        </div>
-        <div class="modal-body">
+    <!------------------------------------------ Modal ------------------------------------------->
+    <div class="modal fade" tabindex="-1" role="dialog" id="myModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Fissiamo un colloquio?</h5>
+                    <div>
+                        <img id="logomp" src="./assets/img/logoMP.png" alt="">
+                    </div>
+                </div>
+                <div class="modal-body">
                     <!--Grid column-->
                     <div class="col-md-9 mb-md-0 mb-5">
-                        <form id="contact-form" name="contact-form" action="https://formspree.io/f/mrgjegdj" method="POST">
+                        <form id="hire-form" name="hire-form" action="https://formspree.io/f/mrgjegdj" method="POST">
 
                             <!--Grid row-->
                             <div class="row">
@@ -439,23 +446,20 @@
                             <!--Grid row-->
 
                         </form>
-
-                        <div class="text-center text-md-left">
-                            <a class="btn btn-primary"
-                                onclick="document.getElementById('contact-form').submit();">Send</a>
-                        </div>
                         <div class="status"></div>
                     </div>
                     <!--Grid column-->
 
+                </div>
+                <div class="modal-footer">
+                    <button id="cancelbutton" class="btn btn-outline-primary btn-sm togglemodal" type="button"
+                        data-dismiss="modal">Cancel</button>
+                    <button class="btn btn-primary btn-sm" type="button"
+                        onclick="document.getElementById('hire-form').submit();">Send</button>
+                </div>
+            </div>
         </div>
-        <div class="modal-footer">
-          <button id="cancelbutton"class="btn btn-outline-primary btn-sm togglemodal" type="button" data-dismiss="modal">Cancel</button>
-          <button class="btn btn-primary btn-sm" type="button">Action 1</button>
-        </div>
-      </div>
     </div>
-  </div>
 
     <!-- START FOOTER SECTION-->
     <footer class="container-fluid bg-footer d-flex flex-column justify-content-end text-white">
