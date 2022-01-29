@@ -15,6 +15,11 @@ h4{
     font-weight: 900;
 }
 
+h5{
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
 p {
     font-size: 1rem;
 }
@@ -60,6 +65,10 @@ i {
     text-align: center;
     padding-top: 6%;
     padding-bottom: 6%;
+}
+
+#hire-me{
+    color: white;
 }
 
 
@@ -195,8 +204,8 @@ header .overlay {
     background: #2196F3;
 }
 .bg-footer {
-    height: 300px;
-    background-image: linear-gradient(to bottom, #dfe3e4, #e7eaeb, #f0f1f2, #f8f8f8, #ffffff);
+    height: 200px;
+    background-color: white;
 }
     /********** Medium devices only **********/
 @media (min-width: 1500px) {
