@@ -151,7 +151,7 @@ header .overlay {
 }
 
 .backgroundColorNav {
-    background-image: url('/assets/img/sfondonavbar.gif');
+    background-image: url('../img/sfondonavbar.gif');
     background-size:cover;
     z-index:10;
     box-shadow: white 2px 2px;
