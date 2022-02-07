@@ -11,6 +11,10 @@ body {
     position: relative;
 }
 
+h1 {
+    font-size: 3.5rem;
+}
+
 h4 {
     font-size: 1.8rem;
     font-weight: 900;
@@ -66,7 +70,7 @@ i {
 
 header {
     position: relative;
-    background-color: black;
+    background-color: white;
     width: 100vw;
     height: 100vh;
     min-height: 40rem;
@@ -106,10 +110,20 @@ header .overlay {
 
 #title-overlay-home {
     text-shadow: 2px 1px 10px rgba(0, 0, 0, 1);
-    font-size: 2em;
-    width: 50%;
+    width: 100%;
     line-height: 1.4;
     letter-spacing: 0.1rem;
+}
+
+#subtitle-overlay-home {
+    background-color: #4CAF50;
+    font-size: 2.5rem;
+    width: fit-content;
+}
+
+.txt-rotate {
+    font-size: 2.5rem;
+    display: inline-block;
 }
 
 .colContainer {
@@ -152,10 +166,9 @@ header .overlay {
     background-image: url('../img/sfondonavbar.gif');
     background-size: cover;
     z-index: 10;
-    box-shadow: white 2px 2px;
 }
 
-#logomp {
+.logomp {
     width: 130px;
     padding: 10px;
 }
@@ -184,11 +197,12 @@ header .overlay {
     height: 200px;
     background-color: white;
 }
+
 .fa-phone, .fa-envelope {
     color: black;
 }
 
-#blackText {
+.blackText {
     color: black;
 }
 
@@ -197,7 +211,7 @@ header .overlay {
 @media (min-width: 1500px) {
     header {
         position: relative;
-        background-color: black;
+        background-color: white;
         height: 100vh;
         min-height: 40rem;
         width: 100vw;
@@ -230,7 +244,7 @@ header .overlay {
 
     header {
         position: relative;
-        background-color: black;
+        background-color: white;
         height: 100vh;
         max-height: 900px;
         min-height: 40rem;
@@ -266,6 +280,60 @@ header .overlay {
 
     header {
         position: relative;
+        background-color: white;
+        height: 100vh;
+        max-height: 900px;
+        min-height: 40rem;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    header video {
+        position: absolute;
+        opacity: 1;
+        top: 38%;
+        left: 50%;
+        width: auto;
+        height: 150vh;
+        z-index: -1;
+        -ms-transform: translateX(-50%) translateY(-50%);
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+    }
+
+    #title-overlay-home {
+        text-shadow: 2px 1px 10px rgba(0, 0, 0, 1);
+        width: 100%;
+        line-height: 1;
+        letter-spacing: 0.1rem;
+        font-size: 2.5rem;
+    }
+
+    #subtitle-overlay-home {
+        background-color: #4CAF50;
+        font-size: 2rem;
+        width: fit-content;
+    }
+
+    .txt-rotate {
+        font-size: 2rem;
+        display: inline-block;
+    }
+}
+
+/********** Mobile only **********/
+@media (max-width: 415px) {
+    header video {
+        min-width: 350%;
+    }
+
+    #container-call {
+        text-align: center;
+    }
+
+    header {
+        position: relative;
         background-color: black;
         height: 100vh;
         max-height: 900px;
@@ -286,5 +354,24 @@ header .overlay {
         -moz-transform: translateX(-50%) translateY(-50%);
         -webkit-transform: translateX(-50%) translateY(-50%);
         transform: translateX(-50%) translateY(-50%);
+    }
+
+    #title-overlay-home {
+        text-shadow: 2px 1px 10px rgba(0, 0, 0, 1);
+        width: 100%;
+        line-height: 1;
+        letter-spacing: 0.1rem;
+        font-size: 2.2rem;
+    }
+
+    #subtitle-overlay-home {
+        background-color: #4CAF50;
+        font-size: 1.35rem;
+        width: fit-content;
+    }
+
+    .txt-rotate {
+        font-size: 1.4rem;
+        display: inline-block;
     }
 }

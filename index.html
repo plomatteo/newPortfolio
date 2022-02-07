@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <!-- Meta tags -->
     <meta charset="UTF-8">
@@ -20,9 +19,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.3.0/flickity.min.css"
         integrity="sha512-B0mpFwHOmRf8OK4U2MBOhv9W1nbPw/i3W1nBERvMZaTWd3+j+blGbOyv3w1vJgcy3cYhzwgw1ny+TzWICN35Xg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
     <!--Favicon-->
     <link rel="icon" href="./assets/img/favicon.ico">
+    
     <!--Title-->
     <title>M.Polo - Frontend Dev</title>
 </head>
@@ -37,7 +36,7 @@
         </div>
         <nav id="navbar-mp" class="navbar navbar-dark fixed-top navbar-expand-lg shadow-5-strong">
             <div class="container align-items-center px-3">
-                <a class="navbar-brand" href="#"><img src="./assets/img/1.svg" alt="logo mp" id="logomp"></a>
+                <a class="navbar-brand logomp" href="#"><img src="./assets/img/1.svg" alt="logo mp" id="logomp"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse"
                     aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon">
@@ -82,27 +81,27 @@
             <div class="row rowOverlay d-flex align-items-center">
                 <div class="col-10 text-white d-flex flex-column justify-content-center px-0">
 
-                    <h1 id="title-overlay-home">Sono Matteo e studio &nbsp
-                        <br>
-                        <span class="txt-rotate" data-period="1000"
-                            data-rotate='["HTML", "CSS/SASS", "BOOTSTRAP", "JAVASCRIPT", "JQUERY", "REACT", "SQL", "GIT", "WORDPRESS"]'></span>
-                    </h1>
+                    <h1 id="title-overlay-home">Matteo Polo/</h1>
+                    <span id="subtitle-overlay-home">&nbsp; Frontend Dev Junior &nbsp;</span>
+                    <span class="txt-rotate" data-period="1000"
+                        data-rotate='["HTML", "CSS/SASS", "BOOTSTRAP", "JAVASCRIPT", "JQUERY", "REACT", "SQL", "GIT", "WORDPRESS"]'></span>
                     <br>
                 </div>
                 <div class="col-2 text-end text-white d-flex flex-column px-0">
-                    <a class="iconagit px-auto" href="https://www.facebook.com/moodinmotion" target="_blanck">
+                    <a class="iconagit px-auto" href="https://github.com/plomatteo" target="blanck">
                         <i class="fab fa-github-square"></i>
                     </a>
                     <div class="row" id="space-between-socialicon">
                     </div>
-                    <a class="iconalinkedin px-auto" href="https://www.instagram.com/mood.ivanregolin/?hl=it"
-                        target="_blanck">
+                    <a class="iconalinkedin px-auto" href="https://www.linkedin.com/in/plomatteo/" target="blanck">
                         <i class="fab fa-linkedin"></i>
                     </a>
                 </div>
                 <!--end hero section-->
+            </div>
+        </div>
     </header>
-    </div>
+
     <!--end header-->
 
     <!-- START ME SECTION-->
@@ -123,7 +122,7 @@
                     <h4>Matteo Polo</h4>
                     <p class="mainText">Circa un anno fa ho deciso di cambiare carriera lavorativa. Da 6 mesi sono
                         impegnato nell'apprendimento dello sviluppo web frontend. Cerco un'azienda alla quale dare il
-                        mio contributo e nella continuare a crescere.
+                        mio contributo e nella quale continuare a crescere.
                     </p>
                 </div>
             </div>
@@ -150,7 +149,7 @@
                 <!-- start icon carousel-->
                 <div class="col-sm-12 col-md-5 mx-0 d-flex flex-column flex-row-sm justify-content-center">
                     <div class="main-carousel"
-                        data-flickity='{ "cellAlign": "left", "contain": true, "prevNextButtons": false }'>
+                        data-flickity='{"cellAlign": "left", "contain": true, "prevNextButtons": true, "pageDots":false}'>
                         <div class="carousel-cell">
                             <div class="icon">
                                 <i class="fab fa-html5 blacktext"></i>
@@ -159,7 +158,7 @@
                         </div>
                         <div class="carousel-cell">
                             <div class="icon"><i class="fab fa-css3-alt blacktext"></i>
-                                <p class="iconblacktext">&nbspCss3</p>
+                                <p class="iconblacktext">&nbsp;Css3</p>
                             </div>
                         </div>
                         <div class="carousel-cell">
@@ -200,28 +199,21 @@
             <!-- start soft skills section-->
             <div class="row my-5">
                 <div
-                    class="col-sm-12 col-md-5 order-2 order-md-1 mx-0 px-3 d-flex flex-column flex-row-sm justify-content-center">
-                    <div class="main-carousel"
-                        data-flickity='{ "cellAlign": "left", "contain": true, "prevNextButtons": false, "pageDots": false }'>
+                    class="col-sm-12 col-md-5 order-2 order-md-1 mx-0 px-3 d-flex flex-row flex-row-sm justify-content-center align-items-center">
 
-                        <div class="carousel-cell">
-                            <div class="icon">
-                                <i class="fas fa-user-friends whitetext"></i>
-                                <p class="iconwhitetext">TeamWork</p>
-                            </div>
-                        </div>
-                        <div class="carousel-cell">
-                            <div class="icon">
-                                <i class="fas fa-cogs whitetext"></i></i>
-                                <p class="iconwhitetext">Agile</p>
-                            </div>
-                        </div>
-                        <div class="carousel-cell">
-                            <div class="icon">
-                                <i class="fas fa-screwdriver whitetext"></i>
-                                <p class="iconwhitetext">Problem Solving</p>
-                            </div>
-                        </div>
+                    <div class="icon">
+                        <i class="fas fa-user-friends whitetext"></i>
+                        <p class="iconwhitetext">TeamWork</p>
+                    </div>
+
+                    <div class="icon">
+                        <i class="fas fa-cogs whitetext"></i>
+                        <p class="iconwhitetext">Agile</p>
+                    </div>
+
+                    <div class="icon">
+                        <i class="fas fa-screwdriver whitetext"></i>
+                        <p class="iconwhitetext">Problem Solving</p>
                     </div>
                 </div>
                 <div
@@ -251,7 +243,8 @@
                         <h5 class="card-title">Mood website</h5>
                         <p class="card-text mainText">Un sito realizzato per un videomaker locale, con player video
                             custom scritto in JS (sviluppo in corso)</p>
-                        <a href="https://plomatteo.github.io/mood-by-ivan-regolin/" target="_blanck" class="btn btn-primary">Vai al sito</a>
+                        <a href="https://plomatteo.github.io/mood-by-ivan-regolin/" target="_blank"
+                            class="btn btn-primary">Vai al sito</a>
                     </div>
                 </div>
             </div>
@@ -262,7 +255,8 @@
                         <h5 class="card-title">Giochi arcade</h5>
                         <p class="card-text mainText">Due giochi arcade realizzati in Javascript: Tris e Acchiappa il
                             papero.</p>
-                        <a href="https://plomatteo.github.io/acchiappa-la-talpa/" target="_blanck" class="btn btn-primary">Vai al sito</a>
+                        <a href="https://plomatteo.github.io/acchiappa-la-talpa/" target="_blank"
+                            class="btn btn-primary">Vai al sito</a>
                     </div>
                 </div>
             </div>
@@ -273,18 +267,19 @@
                         <h5 class="card-title">Pagina E-commerce</h5>
                         <p class="card-text mainText">Riproduzione di una pagina E-commerce con script che aggiunge uno
                             o più elementi al carrello</p>
-                        <a href="https://plomatteo.github.io/ecommerce-product-page/" target="_blanck" class="btn btn-primary">Vai al sito</a>
+                        <a href="https://plomatteo.github.io/ecommerce-product-page/" target="_blank"
+                            class="btn btn-primary">Vai al sito</a>
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card">
-                    <img src="./assets/img/film-database.png" class="card-img-top" alt="...">
+                    <img src="./assets/img/todo.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Catalogo dei film</h5>
-                        <p class="card-text mainText">Catalogo dei film realizzato utilizzando chiamate AJAX sia GET che
-                            POST a "The Movie Database" (sviluppo in corso)</p>
-                        <a href="https://plomatteo.github.io/posttree/" target="_blanck" class="btn btn-primary">Vai al sito</a>
+                        <h5 class="card-title">To do App</h5>
+                        <p class="card-text mainText">Una App per annotare le proprie task di lavoro e spuntarle una volta che sono terminate</p>
+                        <a href="https://sleepy-borg-58e0c8.netlify.app/" target="_blank" class="btn btn-primary">Vai al
+                            sito</a>
                     </div>
                 </div>
             </div>
@@ -330,7 +325,7 @@
                                 <div class="col-md-12">
 
                                     <div class="md-form">
-                                        <textarea type="text" id="message" name="message" rows="2"
+                                        <textarea id="message" name="message" rows="2"
                                             class="form-control md-textarea"></textarea>
                                         <label for="message">Your message</label>
                                     </div>
@@ -353,13 +348,13 @@
                             </li>
                             <li>
                                 <a href="tel:+ 39 3407382688"><i class="fas fa-phone mt-4 fa-2x"></i>
-                                    <p id="blackText">Click me</p>
+                                    <p class="blackText">Click me</p>
                                 </a>
                             </li>
                             <li>
                                 <a href="mailto:matte.polo@gmail.com">
                                     <i class="fas fa-envelope mt-4 fa-2x"></i>
-                                    <p id="blackText">matte.polo@gmail.com</p>
+                                    <p class="blackText">matte.polo@gmail.com</p>
                                 </a>
                             </li>
                         </ul>
@@ -371,34 +366,21 @@
 
     <!-- START FOOTER SECTION-->
     <footer class="container-fluid bg-footer d-flex flex-column justify-content-end text-white">
-        <div class="container">
-            <section class="">
-                <form action="">
-                    <div class="row d-flex justify-content-center">
-                    </div>
-                </form>
-            </section>
-        </div>
+        
         <!-- COPYRIGHT -->
         <div class="text-center text-black p-3">
-            © 2022 Copyright:
-            <a class="linkfooter" href="">Matteo Polo</a>
-            <br>
-            Sito realizzato da:
-            <a class="linkfooter" href="">Matteo Polo</a>
+            Sito realizzato da
+            <a class="linkfooter" href="">Matteo Polo</a>© 2022 Copyright
         </div>
+        <a href="https://www.iubenda.com/privacy-policy/21811450"
+            class="iubenda-white iubenda-noiframe iubenda-embed iubenda-noiframe " title="Privacy Policy ">Privacy
+            Policy</a>
     </footer>
 
-    <!------------------------------------------ MODAL WINDOW ------------------------------------------->
+    <!--MODAL WINDOW-->
     <div class="modal fade" tabindex="-1" role="dialog" id="myModal">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Fissiamo un colloquio?</h5>
-                    <div>
-                        <img id="logomp" src="./assets/img/logoMP.png" alt="">
-                    </div>
-                </div>
                 <div class="modal-body">
                     <div class="calendly-inline-widget" style="min-width:320px; height:950px;" data-auto-load="false">
                         <script type="text/javascript"
@@ -433,6 +415,9 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- START SCRIPT-->
+    <script>
+    (function (w, d) {var loader = function () { var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src = "https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s, tag); }; if (w.addEventListener) { w.addEventListener("load", loader, false); } else if (w.attachEvent) { w.attachEvent("onload", loader); } else { w.onload = loader; } })(window, document);
+    </script>
     <script>
         jQuery(document).ready(function () {
 
